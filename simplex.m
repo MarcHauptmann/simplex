@@ -39,6 +39,6 @@ function x = simplex(c, A, b)
         x(BIndices) = x(BIndices) - d*xqp;
         x(q) = xqp;
         
-        BIndices = [setdiff(BIndices, p), q];
+        BIndices = [setdiff(BIndices, BIndices(p)), q];
     end
 end
